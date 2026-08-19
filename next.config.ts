@@ -2,6 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  // Keeps `next dev` from writing AGENTS.md / CLAUDE.md into the repo.
   agentRules: false,
 };
 

@@ -1,4 +1,11 @@
-
+/**
+ * Types mirroring the mock API contract in `src/mocks`.
+ *
+ * The API is not perfectly uniform: collection endpoints wrap results in
+ * `{ data, total }` while single-resource endpoints return the resource
+ * directly. These types keep that distinction explicit so the service layer
+ * (and only the service layer) has to deal with it.
+ */
 
 export type Gender = 'male' | 'female';
 

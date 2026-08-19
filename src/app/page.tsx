@@ -1,10 +1,5 @@
-'use client';
+import { DashboardView } from '@/components/dashboard/dashboard-view';
 
-import { useEffect } from 'react';
-
-export default function Home() {
-
-  return <main>{/* Start here*/}
-  <h1>Hello World</h1>
-  </main>;
+export default function DashboardPage() {
+  return <DashboardView />;
 }
